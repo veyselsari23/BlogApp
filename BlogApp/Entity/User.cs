@@ -9,6 +9,13 @@ namespace BlogApp.Entity
     {
         public int UserId { get; set; }
         public string? UserName { get; set;}
+
+
+        //Navigation Properties 
+        ICollection<Post> Posts { get; set; } = new List<Post>();
+        ICollection<Comment> Comments { get; set; }=new List<Comment>();
+
+
     
     }
 }

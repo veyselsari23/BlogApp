@@ -9,6 +9,15 @@ namespace BlogApp.Entity
     {
         public int CommentId { get; set; }
         public int Text { get; set; }   
+        public DateTime PublishedOn { get; set; }
+
+        public int PostId { get; set; }
+        public int UserId { get; set; }
+
+        // Navigation Properties 
+        public Post Post{ get; set; }=null!;
+        public User User{ get; set; }=null!;
+     
         
     }
 }
