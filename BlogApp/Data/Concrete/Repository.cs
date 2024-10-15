@@ -39,15 +39,16 @@ namespace BlogApp.Data.Concrete
             }
         }
 
-        public ICollection<T> GetAll()
+        public IQueryable<T> GetAll()
         {
-            return _dataContext.Set<T>().ToList();
+            return _dataContext.Set<T>();
         }
 
         public T GetById(int id)
         {
             var entity = _dataContext.Set<T>().Find(id);
             return entity;
+            
         }
 
         public void Update(T entity)

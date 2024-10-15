@@ -1,12 +1,18 @@
 
 
 
+using BlogApp.Data.Abstract;
+using BlogApp.Data.Concrete;
 using BlogApp.Data.Context.EfCore;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddControllersWithViews();
 
 
+
+// Sistem injectionlarını yapalım
+builder.Services.AddScoped<IPostRepository,PostRepository>();
 builder.Services.AddDbContext<DataContext>(options=>{
 
     var configuration=builder.Configuration;
@@ -15,13 +21,13 @@ builder.Services.AddDbContext<DataContext>(options=>{
 
 });
 
-
 var app = builder.Build();
 
 
 // Uygulamamızın test verilerini doldurmak için kullanılıyoruz. //
 SeedData.TestVerileriniDoldur(app);
 
-app.MapGet("/", () => "Hello World!");
+app.MapDefaultControllerRoute();
+
 
 app.Run();

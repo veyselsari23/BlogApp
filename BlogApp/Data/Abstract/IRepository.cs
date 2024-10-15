@@ -8,7 +8,7 @@ namespace BlogApp.Data.Abstract{
             void Add(T entity);
             void Update(T entity);
             void Delete(T entity);
-            ICollection<T> GetAll();
+            IQueryable<T> GetAll();
             T GetById(int id);        
     }
 }
