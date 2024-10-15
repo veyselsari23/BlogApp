@@ -21,12 +21,14 @@ builder.Services.AddDbContext<DataContext>(options=>{
 
 });
 
+
+
 var app = builder.Build();
 
 
 // Uygulamamızın test verilerini doldurmak için kullanılıyoruz. //
 SeedData.TestVerileriniDoldur(app);
-
+app.UseStaticFiles();
 app.MapDefaultControllerRoute();
 
 

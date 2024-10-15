@@ -301,3 +301,5 @@ C:\Users\Ogr\Downloads\veysel\BlogApp\BlogApp\obj\Debug\net8.0\BlogApp.genruntim
 C:\Users\Ogr\Downloads\veysel\BlogApp\BlogApp\obj\Debug\net8.0\ref\BlogApp.dll
 C:\Users\Ogr\Downloads\veysel\BlogApp\BlogApp\obj\Debug\net8.0\BlogApp.RazorAssemblyInfo.cache
 C:\Users\Ogr\Downloads\veysel\BlogApp\BlogApp\obj\Debug\net8.0\BlogApp.RazorAssemblyInfo.cs
+C:\Users\Ogr\Downloads\veysel\BlogApp\BlogApp\bin\Debug\net8.0\libman.json
+C:\Users\Ogr\Downloads\veysel\BlogApp\BlogApp\bin\Debug\net8.0\BlogApp.staticwebassets.runtime.json

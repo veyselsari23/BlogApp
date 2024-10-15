@@ -1,0 +1,22 @@
+LibMan Yükleme ve Boostrapı Yükleme 
+
+dotnet tool list -g   // sistemde yüklü toolları görmek için kullanırız
+ 
+dotnet tool install -g Microsoft.Web.LibraryManager.Cli   // libmanı projemize yükleyelim
+
+libman --version 
+
+libman init -p  cdnjs    // projemizin içine libman.json dosyasını ekler
+
+
+libman install -d wwwroot/lib/bootstrap bootstrap // libman aracılğıyla bu klasöre bootstrap ı yükler . eğer klasör yoksa oluşturur
+
+kullanım: 
+  _layout.cshtml dosyamızın içine linki yerleştirelim.  <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+
+
+libman install  bootstrap-icons -d  wwwroot/lib/boostrap/icons   // libman aracılığıyla boostsrap iconları yüklüyoruz. 
+
+kullanım: 
+     <link rel="stylesheet" href="/lib/boostrap/icons/font/bootstrap-icons.min.css">  // head içine
+      <i class="bi bi-code"></i>

@@ -81,6 +81,7 @@ namespace BlogApp.Data.Context.EfCore
                                 IsActive = true,
                                 PublishedOn = DateTime.Now.AddDays(-10),
                                 Tags = context.Tags.Take(3).ToList(),
+                                Image="1.jpg",
                                 UserId = 1
                             },
                              new Entity.Post
@@ -90,6 +91,7 @@ namespace BlogApp.Data.Context.EfCore
                                  IsActive = true,
                                  PublishedOn = DateTime.Now.AddDays(-10),
                                  Tags = context.Tags.Take(3).ToList(),
+                                 Image="2.jpg",
                                  UserId = 1
                              },
                              new Entity.Post
@@ -99,18 +101,10 @@ namespace BlogApp.Data.Context.EfCore
                                  IsActive = true,
                                  PublishedOn = DateTime.Now.AddDays(-10),
                                  Tags = context.Tags.Take(3).ToList(),
-                                 UserId = 2
-                             },
-                             new Entity.Post
-                             {
-                                 Title = "Plc Programlama  ",
-                                 PostContent = "Plc ve Otomasyon Konusunda ilerleyelim",
-                                 IsActive = true,
-                                 PublishedOn = DateTime.Now.AddDays(-10),
-                                 Tags = context.Tags.Take(3).ToList(),
-                                 UserId = 2
+                                 UserId = 2,
+                                 Image="3.jpg",
                              }
-
+                            
 
                     );
 
