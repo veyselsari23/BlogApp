@@ -10,8 +10,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<DataContext>(options=>{
 
     var configuration=builder.Configuration;
-    var connectionString=configuration.GetConnectionString("sqlConnection");
-    options.UseSqlServer(connectionString);
+    var connectionString=configuration.GetConnectionString("sqliteConnection");
+    options.UseSqlite(connectionString);
 
 });
 

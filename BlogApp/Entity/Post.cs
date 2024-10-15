@@ -12,8 +12,15 @@ namespace BlogApp.Entity
         public string? PostContent { get; set; }        
         public DateTime PublishedOn { get; set; }
         public bool IsActive { get; set; }
-        public int? UserId { get; set; }
+        public int UserId { get; set; }
     
+        /*
+            hangi Sorularla oluşturduk
+            1- Her post bir kullanıcı tarafından yapılmıştır
+            2- Her Posta Ait birden fazla comment vardır 
+            3- Her post un birden fazla tag'ı olabilir
+
+        */
 
         //Navigation Properties
         public User User { get; set; }=null!;

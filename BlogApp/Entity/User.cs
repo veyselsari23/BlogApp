@@ -11,6 +11,15 @@ namespace BlogApp.Entity
         public string? UserName { get; set;}
 
 
+        // Hangi Sorularla tabloları bağlıyoruz.
+
+        /*
+            1- Kullanıcıların Commentleri vardır 
+            2- Kullanıcıların Postları vardır 
+            */
+    
+
+
         //Navigation Properties 
         ICollection<Post> Posts { get; set; } = new List<Post>();
         ICollection<Comment> Comments { get; set; }=new List<Comment>();

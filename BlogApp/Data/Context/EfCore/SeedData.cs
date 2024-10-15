@@ -64,7 +64,7 @@ namespace BlogApp.Data.Context.EfCore
                 // Çünkü bir PostId si oluşmamışsa herhangi bir comment ekleyemem
                 //Comment i sonra arayüzden seçip uygulayacağız
 
-             //   if(!context.Posts.Any()){
+              if(!context.Posts.Any()){
 
                     context.Posts.AddRange(
 
@@ -108,7 +108,7 @@ namespace BlogApp.Data.Context.EfCore
 
 
 
-         //   }
+            }
 
         }
 

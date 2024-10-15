@@ -10,7 +10,14 @@ namespace BlogApp.Entity
         public int TagId { get; set; }
         public string? Text { get; set; }
 
+        /*
+            Hangi soruları sorduk 
+            1- Her tag birden fazla post da olabiliru
+            2- Tag in user ve comment ile bir ilişkisi yoktur
 
+        */
+
+        // Navigation Properties
         public List<Post> Posts { get; set; } = new List<Post>();
 
 
