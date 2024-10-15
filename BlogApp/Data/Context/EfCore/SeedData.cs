@@ -34,7 +34,7 @@ namespace BlogApp.Data.Context.EfCore
 
                 // Tags Tablosuna Veriler Ekleyelim.
                 // Eğer Tags. Tablosunda hiç veri yoksa
-                if (context.Tags.Any())
+                if (!context.Tags.Any())
                 {
 
                     context.Tags.AddRange(
@@ -47,67 +47,87 @@ namespace BlogApp.Data.Context.EfCore
 
                 }
 
+
+
+
                 // Burada Anladığım Şöyle bir mantık var . 
                 // Biz Foreign Keylerle bir bağlantımız var (Default Convention Mantığı ile )
                 // Dolayısıyla Verileri eklerken bu mantığa uygun öncelik vermemiz gerekiyor 
 
                 // Eğer User Tablosunda hiç veri yoksa
-                if(context.Users.Any()){
+                if (!context.Users.Any())
+                {
                     context.Users.AddRange(
-                        new Entity.User { UserName = "veyselsari23"},
-                        new Entity.User { UserName = "ahmetyilmaz"}
+                        new Entity.User { UserName = "veyselsari23" },
+                        new Entity.User { UserName = "ahmetyilmaz" }
+                    );
+
+
+
+            
+
+                }
+
+
+  if (!context.Posts.Any())
+                {
+
+                    context.Posts.AddRange(
+
+                            new Entity.Post
+                            {
+                                Title = "Asp.net Core ",
+                                PostContent = "Asp.Net Core Dersleri",
+                                IsActive = true,
+                                PublishedOn = DateTime.Now.AddDays(-10),
+                                Tags = context.Tags.Take(3).ToList(),
+                                UserId = 1
+                            },
+                             new Entity.Post
+                             {
+                                 Title = "JavaSript",
+                                 PostContent = "Javascript ile ileri Seviyeyi",
+                                 IsActive = true,
+                                 PublishedOn = DateTime.Now.AddDays(-10),
+                                 Tags = context.Tags.Take(3).ToList(),
+                                 UserId = 1
+                             },
+                             new Entity.Post
+                             {
+                                 Title = "Python Django",
+                                 PostContent = "Derinlemesine Python ",
+                                 IsActive = true,
+                                 PublishedOn = DateTime.Now.AddDays(-10),
+                                 Tags = context.Tags.Take(3).ToList(),
+                                 UserId = 2
+                             },
+                             new Entity.Post
+                             {
+                                 Title = "Plc Programlama  ",
+                                 PostContent = "Plc ve Otomasyon Konusunda ilerleyelim",
+                                 IsActive = true,
+                                 PublishedOn = DateTime.Now.AddDays(-10),
+                                 Tags = context.Tags.Take(3).ToList(),
+                                 UserId = 2
+                             }
+
+
                     );
 
                 }
+
 
                 // Şimdi Eğer Post Yoksa Post Ekleyelim. Comment i önce ekleyemiyorum 
                 // Çünkü bir PostId si oluşmamışsa herhangi bir comment ekleyemem
                 //Comment i sonra arayüzden seçip uygulayacağız
 
-              if(!context.Posts.Any()){
 
-                    context.Posts.AddRange(
-
-                            new Entity.Post { Title="Asp.net Core ",
-                            PostContent="Asp.Net Core Dersleri",
-                            IsActive=true,
-                            PublishedOn=DateTime.Now.AddDays(-10),
-                            Tags=context.Tags.Take(3).ToList(),
-                            UserId=1
-                            },
-                             new Entity.Post { Title="Asp.net Core ",
-                            PostContent="Asp.Net Core Dersleri",
-                            IsActive=true,
-                            PublishedOn=DateTime.Now.AddDays(-10),
-                            Tags=context.Tags.Take(3).ToList(),
-                            UserId=1
-                            },
-                             new Entity.Post { Title="Asp.net Core ",
-                            PostContent="Asp.Net Core Dersleri",
-                            IsActive=true,
-                            PublishedOn=DateTime.Now.AddDays(-10),
-                            Tags=context.Tags.Take(3).ToList(),
-                            UserId=2
-                            },
-                             new Entity.Post { Title="Asp.net Core ",
-                            PostContent="Asp.Net Core Dersleri",
-                            IsActive=true,
-                            PublishedOn=DateTime.Now.AddDays(-10),
-                            Tags=context.Tags.Take(3).ToList(),
-                            UserId=2
-                            }
-
-
-                    );
-
-
-                    context.SaveChanges();            
-                    
-
-                }   
+            
+              
 
 
 
+                context.SaveChanges();
             }
 
         }

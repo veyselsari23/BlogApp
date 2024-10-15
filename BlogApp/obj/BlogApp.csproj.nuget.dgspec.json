@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Ogr\\Downloads\\veysel\\BlogApp\\BlogApp\\BlogApp.csproj": {}
+    "C:\\Users\\Ogr\\Downloads\\veysel\\BlogApp\\BlogApp\\BlogApp.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Ogr\\Downloads\\veysel\\BlogApp\\BlogApp\\BlogApp.csproj": {
+    "C:\\Users\\Ogr\\Downloads\\veysel\\BlogApp\\BlogApp\\BlogApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Ogr\\Downloads\\veysel\\BlogApp\\BlogApp\\BlogApp.csproj",
+        "projectUniqueName": "C:\\Users\\Ogr\\Downloads\\veysel\\BlogApp\\BlogApp\\BlogApp.csproj",
         "projectName": "BlogApp",
-        "projectPath": "c:\\Users\\Ogr\\Downloads\\veysel\\BlogApp\\BlogApp\\BlogApp.csproj",
+        "projectPath": "C:\\Users\\Ogr\\Downloads\\veysel\\BlogApp\\BlogApp\\BlogApp.csproj",
         "packagesPath": "C:\\Users\\Ogr\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Ogr\\Downloads\\veysel\\BlogApp\\BlogApp\\obj\\",
+        "outputPath": "C:\\Users\\Ogr\\Downloads\\veysel\\BlogApp\\BlogApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ogr\\AppData\\Roaming\\NuGet\\NuGet.Config",
