@@ -1,0 +1,29 @@
+Ana Dizinde [ ViewComponents ] diye bir dizin oluşturalım
+Bu dizinde [ ----ViewComponent.cs] diye bir dosya oluşturalım. örnek:PersonelViewComponent
+Bu Componenti hangi controller içinde kullanmak istiyorsak onun view 'i altına 
+
+
+----  Dosya ve Klasör Yapısı
+[root] - [ViewComponents] - [PersonellerViewComponent.cs]
+[root]-[Views]- [Home]-[ Components ] - [ Personeller ] - [ Default.cshtml] dosyasını oluşturalım.
+
+
+--  cs. dosyasının yapısı 
+
+    PersonellerViewComponent:ViewComponent  den miras alır 
+
+    ve şöyle bir metodu olur 
+
+        public IViewComponetResult  Invoke()
+        {
+           
+            return View();
+
+        }
+
+-- default cshtml 
+    normal bir cshtml gibi modeli alır ver gösterir.
+
+-- Home - Index.cshtml içinde kullanımı 
+    
+
