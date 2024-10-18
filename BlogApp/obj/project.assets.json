@@ -4317,19 +4317,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ogr\\.nuget\\packages\\": {}
+    "C:\\Users\\veysel\\.nuget\\packages\\": {},
+    "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ogr\\Downloads\\veysel\\BlogApp\\BlogApp\\BlogApp.csproj",
+      "projectUniqueName": "C:\\Users\\veysel\\Desktop\\_NetCore\\Blog\\BlogApp\\BlogApp\\BlogApp.csproj",
       "projectName": "BlogApp",
-      "projectPath": "C:\\Users\\Ogr\\Downloads\\veysel\\BlogApp\\BlogApp\\BlogApp.csproj",
-      "packagesPath": "C:\\Users\\Ogr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ogr\\Downloads\\veysel\\BlogApp\\BlogApp\\obj\\",
+      "projectPath": "C:\\Users\\veysel\\Desktop\\_NetCore\\Blog\\BlogApp\\BlogApp\\BlogApp.csproj",
+      "packagesPath": "C:\\Users\\veysel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\veysel\\Desktop\\_NetCore\\Blog\\BlogApp\\BlogApp\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Ogr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\veysel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4337,6 +4342,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
