@@ -1,15 +1,24 @@
 using Microsoft.AspNetCore.Mvc;
+using BlogApp.Data.Abstract;
+using BlogApp.Data.Context.EfCore;
+namespace BlogApp.Controllers
+{
+    public class HomeController : Controller
+    {
 
-namespace BlogApp.Controllers{
 
+        private readonly IPostRepository _postRepository;
 
-    public class HomeController : Controller{
-
-
-
-        public IActionResult Index(){
-            return View();  
+        public HomeController(IPostRepository postRepository)
+        {
+            _postRepository = postRepository;
         }
-        
-    }  
+        public IActionResult Index()
+        {
+            var posts = _postRepository.GetAll().ToList();
+            return View(posts);
+
+        }
+
+    }
 }

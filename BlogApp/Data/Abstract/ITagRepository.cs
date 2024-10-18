@@ -1,6 +1,7 @@
 using BlogApp.Entity;
 
-namespace BlogApp.Data.Abstract{
+namespace BlogApp.Data.Abstract
+{
 
     public interface ITagRepository:IRepository<Tag>
     {

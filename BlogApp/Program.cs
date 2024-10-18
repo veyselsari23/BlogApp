@@ -6,6 +6,7 @@ using BlogApp.Data.Concrete;
 using BlogApp.Data.Context.EfCore;
 using Microsoft.EntityFrameworkCore;
 
+
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
@@ -14,6 +15,7 @@ builder.Services.AddControllersWithViews();
 // Sistem injectionlarını yapalım
 builder.Services.AddScoped<IPostRepository,PostRepository>();
 builder.Services.AddScoped<ITagRepository,TagRepository>();
+
 builder.Services.AddDbContext<DataContext>(options=>{
 
     var configuration=builder.Configuration;

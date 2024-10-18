@@ -1,0 +1,22 @@
+@model List<Tag>
+
+
+
+
+<div class="card">
+
+<div class="card-header">
+
+
+    Tags
+</div>
+<ol class="list-group list-group-numbered">
+    @foreach (var t in Model)
+    {
+
+        <li class="list-group-item"> @t.Text</li>
+
+    }
+
+</ol>
+</div>
