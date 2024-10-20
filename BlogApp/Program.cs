@@ -4,6 +4,7 @@
 using BlogApp.Data.Abstract;
 using BlogApp.Data.Concrete;
 using BlogApp.Data.Context.EfCore;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -32,6 +33,19 @@ var app = builder.Build();
 // Uygulamamızın test verilerini doldurmak için kullanılıyoruz. //
 SeedData.TestVerileriniDoldur(app);
 app.UseStaticFiles();
+
+app.MapControllerRoute(
+    name:"post_details",
+    pattern:"/posts/{url}",
+    defaults:new {controller="Home",action="Details"}
+);
+
+app.MapControllerRoute(
+    name:"post_byTags",
+    pattern:"/posts/tag/{tag}",
+    defaults:new{controller="Home",action="Index"}
+
+);
 app.MapDefaultControllerRoute();
 
 

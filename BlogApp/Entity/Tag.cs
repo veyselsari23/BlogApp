@@ -9,6 +9,7 @@ namespace BlogApp.Entity
     {
         public int TagId { get; set; }
         public string? Text { get; set; }
+        public string? url{get;set;}
 
         /*
             Hangi soruları sorduk 

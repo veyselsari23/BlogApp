@@ -1,32 +1,32 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Intrinsics.X86;
 using System.Threading.Tasks;
 using BlogApp.Data.Abstract;
+using BlogApp.Data.Concrete;
 using BlogApp.Entity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace BlogApp.ViewComponents
 {
-    public class Comments : ViewComponent
+    public class LastPosts : ViewComponent
     {
 
 
         private readonly IPostRepository _postRepository;
 
-        public Comments(IPostRepository postRepository)
+        public LastPosts(IPostRepository postRepository)
         {
             _postRepository = postRepository;
         }
 
+        public  IViewComponentResult Invoke(){
 
+            List<Post> result= _postRepository.GetAll().ToList();
 
-        public IViewComponentResult Invoke(int id)
-        {
-
-            Post result = _postRepository.GetAll().Include(x => x.Comments).FirstOrDefault(x => x.PostId == id);
-            return View(result.Comments);
+            return  View(result);
         }
 
     }

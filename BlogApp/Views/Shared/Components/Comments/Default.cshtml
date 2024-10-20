@@ -1,0 +1,24 @@
+@model List<Comment>
+
+<div class="card mt-3">
+
+<div class="card-header">
+
+
+ Yorumlar
+ <hr>
+</div>
+<ol class="list-group list-group-numbered">
+    
+@foreach(var cmt in Model)
+{
+
+   <li class="list-group-item"> @cmt.Text @cmt.PublishedOn </li>
+
+}
+   
+    
+
+</ol>
+   
+</div>

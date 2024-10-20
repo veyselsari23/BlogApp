@@ -1,0 +1,19 @@
+@model List<Post>
+
+<div class="card mt-3">
+
+<div class="card-header">
+
+
+   Son Gönderilen Yazılar 
+</div>
+<ol class="list-group list-group-numbered">
+    @foreach (var t in Model)
+    {
+
+        <li class="list-group-item"> @t.Title</li>
+
+    }
+
+</ol>
+</div>

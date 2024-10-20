@@ -14,7 +14,9 @@
     @foreach (var t in Model)
     {
 
-        <li class="list-group-item"> @t.Text</li>
+        <li class="list-group-item"> 
+            <a href="/posts/tag/@t.Text">
+            @t.Text</a></li>
 
     }
 
