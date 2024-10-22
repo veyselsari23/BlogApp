@@ -16,6 +16,7 @@ builder.Services.AddControllersWithViews();
 // Sistem injectionlarını yapalım
 builder.Services.AddScoped<IPostRepository,PostRepository>();
 builder.Services.AddScoped<ITagRepository,TagRepository>();
+builder.Services.AddScoped<ICommentRepository,CommentRepository>();
 
 builder.Services.AddDbContext<DataContext>(options=>{
 

@@ -8,31 +8,28 @@
             <div class="card-header">
                 <h5>
 
-                    @Model.Title 
+                    @Model.Title
                 </h5>
-               
+
             </div>
-            <div class="card-body"> 
-                 
-            
+            <div class="card-body">
+                @foreach (var t in @Model.Tags)
+                {
+                    <span class="btn btn-primary">@t.Text</span>
 
-
-                      @foreach(var t in @Model.Tags){
-                   <span class="btn btn-primary">@t.Text</span>
-             
-                    }
+                }
 
                 <div class="card-img mt-3">
                     <img src="/img/@Model.Image" alt="" class="card-img rounded">
                 </div>
                 <div class="card-text mt-3">
-                 <p>  @Model.PostContent</p> 
-                 <hr>
-                 <p>@Model.PublishedOn</p>
+                    <p> @Model.PostContent</p>
+                    <hr>
+                    <p>@Model.PublishedOn</p>
                 </div>
 
                 <div>
-                    @await Component.InvokeAsync("Comments",@Model.PostId)
+                    @await Component.InvokeAsync("Comments", @Model.PostId)
                 </div>
             </div>
 
@@ -42,6 +39,47 @@
     <div class="col-lg-4">
         @await Component.InvokeAsync("PostTags")
         @await Component.InvokeAsync("LastPosts")
-         
+
     </div>
 </div>
+
+<button class="btn btn-primary" id="btnYorumKayit">Yorum KAyıt </button>
+
+
+@section Scripts {
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#btnYorumKayit").click(function () {
+                var jsonString = JSON.stringify("Test json Data");
+                console.log('Click tetiklendi');
+                $.ajax({
+                    url: "/Home/AddComment",
+                    type: 'POST',
+                    dataType: 'json',
+                    data: {
+
+                        comment:'test deneme'
+                    },
+                    success: function (data) {
+
+                     //   var _data=JSON.parse(data);
+                     //   alert("ajax Başarılı");
+                       // console.log(data);
+                       alert(data.toString());
+                    },
+                    error: function () {
+
+                        alert('hata')
+                    }
+                });
+
+            });
+        });
+
+    </script>
+}

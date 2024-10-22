@@ -11,22 +11,25 @@ namespace BlogApp.Controllers
 
 
         private readonly IPostRepository _postRepository;
+        private readonly ICommentRepository _commentRepository;
 
-        public HomeController(IPostRepository postRepository)
+        public HomeController(IPostRepository postRepository, ICommentRepository commentRepository)
         {
             _postRepository = postRepository;
+            _commentRepository = commentRepository;
         }
         public IActionResult Index(string tag)
         {
 
-            if(tag==null){
-            List<Post> posts = _postRepository.GetAll().Include(x => x.Tags).ToList();
-            return View(posts);
+            if (tag == null)
+            {
+                List<Post> posts = _postRepository.GetAll().Include(x => x.Tags).ToList();
+                return View(posts);
             }
             else
             {
-             
-                var posts=_postRepository.GetAll().Include(x=> x.Tags).Where(x=> x.Tags.Any(t=> t.Text==tag)).ToList();
+
+                var posts = _postRepository.GetAll().Include(x => x.Tags).Where(x => x.Tags.Any(t => t.Text == tag)).ToList();
                 return View(posts);
             }
 
@@ -41,6 +44,14 @@ namespace BlogApp.Controllers
                 return View(result);
             else
                 return NotFound();
+        }
+
+        [HttpPost]
+        public JsonResult AddComment(string comment)
+        {
+
+            return Json(comment);
+
         }
 
     }
