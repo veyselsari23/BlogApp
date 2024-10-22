@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\veysel\\Desktop\\_NetCore\\Blog\\BlogApp\\BlogApp\\BlogApp.csproj": {}
+    "C:\\Users\\veysel\\Desktop\\_NetCore\\Blog\\BlogApp\\BlogApp\\BlogApp.csproj": {}
   },
   "projects": {
-    "c:\\Users\\veysel\\Desktop\\_NetCore\\Blog\\BlogApp\\BlogApp\\BlogApp.csproj": {
+    "C:\\Users\\veysel\\Desktop\\_NetCore\\Blog\\BlogApp\\BlogApp\\BlogApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\veysel\\Desktop\\_NetCore\\Blog\\BlogApp\\BlogApp\\BlogApp.csproj",
+        "projectUniqueName": "C:\\Users\\veysel\\Desktop\\_NetCore\\Blog\\BlogApp\\BlogApp\\BlogApp.csproj",
         "projectName": "BlogApp",
-        "projectPath": "c:\\Users\\veysel\\Desktop\\_NetCore\\Blog\\BlogApp\\BlogApp\\BlogApp.csproj",
+        "projectPath": "C:\\Users\\veysel\\Desktop\\_NetCore\\Blog\\BlogApp\\BlogApp\\BlogApp.csproj",
         "packagesPath": "C:\\Users\\veysel\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\veysel\\Desktop\\_NetCore\\Blog\\BlogApp\\BlogApp\\obj\\",
+        "outputPath": "C:\\Users\\veysel\\Desktop\\_NetCore\\Blog\\BlogApp\\BlogApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages"

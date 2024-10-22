@@ -47,9 +47,6 @@ namespace BlogApp.Data.Context.EfCore
 
                 }
 
-
-
-
                 // Burada Anladığım Şöyle bir mantık var . 
                 // Biz Foreign Keylerle bir bağlantımız var (Default Convention Mantığı ile )
                 // Dolayısıyla Verileri eklerken bu mantığa uygun öncelik vermemiz gerekiyor 

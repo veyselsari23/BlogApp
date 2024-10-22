@@ -25,9 +25,9 @@ namespace BlogApp.Controllers
             }
             else
             {
-                var ps=_postRepository.GetAll().Include(x=> x.Tags).ToList();
-                var posts=ps.Where(x=> x.Tags.Any(t=> t.url==tag));
-                return View(posts.ToList());
+             
+                var posts=_postRepository.GetAll().Include(x=> x.Tags).Where(x=> x.Tags.Any(t=> t.Text==tag)).ToList();
+                return View(posts);
             }
 
         }
