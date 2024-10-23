@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Vu5W4ajB8UXrz1qCgfH8cCt7oubNR52DyspbPc6WNgI=",
+  "Hash": "mvbAZON3qCiUVzpPPlZQOhq1PD+i99Go22eOqc5Gqos=",
   "Source": "BlogApp",
   "BasePath": "_content/BlogApp",
   "Mode": "Default",
@@ -41798,6 +41798,25 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\vendor\\_rfs.scss"
     },
     {
+      "Identity": "C:\\Users\\veysel\\Desktop\\blog\\BlogApp\\blogapp\\wwwroot\\lib\\moment\\moment-with-locales.js",
+      "SourceId": "BlogApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\veysel\\Desktop\\blog\\BlogApp\\blogapp\\wwwroot\\",
+      "BasePath": "_content/BlogApp",
+      "RelativePath": "lib/moment/moment-with-locales.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\moment\\moment-with-locales.js"
+    },
+    {
       "Identity": "C:\\Users\\veysel\\Desktop\\blog\\BlogApp\\blogapp\\wwwroot\\lib\\moment\\moment.js",
       "SourceId": "BlogApp",
       "SourceType": "Discovered",
@@ -41815,6 +41834,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\moment\\moment.js"
+    },
+    {
+      "Identity": "C:\\Users\\veysel\\Desktop\\blog\\BlogApp\\blogapp\\wwwroot\\lib\\signalR\\signalr.js",
+      "SourceId": "BlogApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\veysel\\Desktop\\blog\\BlogApp\\blogapp\\wwwroot\\",
+      "BasePath": "_content/BlogApp",
+      "RelativePath": "lib/signalR/signalr.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\signalR\\signalr.js"
+    },
+    {
+      "Identity": "C:\\Users\\veysel\\Desktop\\blog\\BlogApp\\blogapp\\wwwroot\\lib\\signalR\\signalr.min.js",
+      "SourceId": "BlogApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\veysel\\Desktop\\blog\\BlogApp\\blogapp\\wwwroot\\",
+      "BasePath": "_content/BlogApp",
+      "RelativePath": "lib/signalR/signalr.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\signalR\\signalr.min.js"
     }
   ]
 }

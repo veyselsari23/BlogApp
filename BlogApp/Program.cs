@@ -4,6 +4,8 @@
 using BlogApp.Data.Abstract;
 using BlogApp.Data.Concrete;
 using BlogApp.Data.Context.EfCore;
+using BlogApp.Hubs;
+using BlogApp.Worker;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,7 +19,10 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IPostRepository,PostRepository>();
 builder.Services.AddScoped<ITagRepository,TagRepository>();
 builder.Services.AddScoped<ICommentRepository,CommentRepository>();
+builder.Services.AddSignalR();
 
+
+builder.Services.AddHostedService<bgWorker>();
 builder.Services.AddDbContext<DataContext>(options=>{
 
     var configuration=builder.Configuration;
@@ -49,5 +54,8 @@ app.MapControllerRoute(
 );
 app.MapDefaultControllerRoute();
 
+
+
+app.MapHub<PlcOkuHub>("/PLCHub");
 
 app.Run();

@@ -42,3 +42,40 @@
 
 </div>
  
+
+<div class="col-sm-12">
+
+
+</div>
+
+
+@section Scripts{
+
+<script src="/lib/signalR/signalr.js"></script>
+<script src="/lib/signalR/signalr.min.js"></script>
+
+<script>
+
+        // S I G N A L R
+            //Değerler signal r üzerinden geliyor gayet temiz
+            "use strict";
+
+            //signalr bağlantıyı başlatma komutları
+            var connection = new signalR.HubConnectionBuilder().withUrl("/PLCHub").build();
+
+            //bağlantıyı başlatalım
+            connection.start().then(function () {
+                console.log("bağlantı başladı");
+            }).catch(function (err) {
+                return console.error(err.toString());
+            });
+
+            connection.on("plcDegerAl",async function(message){
+
+                    console.log(message);
+            })
+
+</script>
+
+
+}

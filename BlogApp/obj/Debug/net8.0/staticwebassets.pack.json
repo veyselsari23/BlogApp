@@ -8797,8 +8797,20 @@
       "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\vendor\\_rfs.scss"
     },
     {
+      "Id": "C:\\Users\\veysel\\Desktop\\blog\\BlogApp\\blogapp\\wwwroot\\lib\\moment\\moment-with-locales.js",
+      "PackagePath": "staticwebassets\\lib\\moment\\moment-with-locales.js"
+    },
+    {
       "Id": "C:\\Users\\veysel\\Desktop\\blog\\BlogApp\\blogapp\\wwwroot\\lib\\moment\\moment.js",
       "PackagePath": "staticwebassets\\lib\\moment\\moment.js"
+    },
+    {
+      "Id": "C:\\Users\\veysel\\Desktop\\blog\\BlogApp\\blogapp\\wwwroot\\lib\\signalR\\signalr.js",
+      "PackagePath": "staticwebassets\\lib\\signalR\\signalr.js"
+    },
+    {
+      "Id": "C:\\Users\\veysel\\Desktop\\blog\\BlogApp\\blogapp\\wwwroot\\lib\\signalR\\signalr.min.js",
+      "PackagePath": "staticwebassets\\lib\\signalR\\signalr.min.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BlogApp.Microsoft.AspNetCore.StaticWebAssets.props",
