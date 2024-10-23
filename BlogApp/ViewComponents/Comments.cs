@@ -25,7 +25,10 @@ namespace BlogApp.ViewComponents
         public IViewComponentResult Invoke(int id)
         {
 
-            Post result = _postRepository.GetAll().Include(x => x.Comments).FirstOrDefault(x => x.PostId == id);
+            Post? result = _postRepository.GetAll()
+            .Include(x => x.Comments)
+            .ThenInclude(x=> x.User)
+            .FirstOrDefault(x => x.PostId == id);
             return View(result.Comments);
         }
 

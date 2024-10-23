@@ -4,6 +4,7 @@ using BlogApp.Data.Context.EfCore;
 using BlogApp.Entity;
 using Microsoft.EntityFrameworkCore;
 using BlogApp.ViewComponents;
+using System.Text.Json.Serialization;
 namespace BlogApp.Controllers
 {
     public class HomeController : Controller
@@ -47,9 +48,11 @@ namespace BlogApp.Controllers
         }
 
         [HttpPost]
-        public JsonResult AddComment(string comment)
+        public JsonResult AddComment(Comment comment)
         {
 
+            comment.PublishedOn = DateTime.Now; 
+            _commentRepository.Add(comment);
             return Json(comment);
 
         }

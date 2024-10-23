@@ -9,47 +9,47 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BlogApp
 build_property.RootNamespace = BlogApp
-build_property.ProjectDir = C:\Users\veysel\Desktop\_NetCore\Blog\BlogApp\blogapp\
+build_property.ProjectDir = C:\Users\Ogr\Desktop\veysel\BlogApp\blogapp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\veysel\Desktop\_NetCore\Blog\BlogApp\blogapp
+build_property.MSBuildProjectDirectory = C:\Users\Ogr\Desktop\veysel\BlogApp\blogapp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/veysel/Desktop/_NetCore/Blog/BlogApp/blogapp/Views/Home/Details.cshtml]
+[C:/Users/Ogr/Desktop/veysel/BlogApp/blogapp/Views/Home/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/veysel/Desktop/_NetCore/Blog/BlogApp/blogapp/Views/Home/Index.cshtml]
+[C:/Users/Ogr/Desktop/veysel/BlogApp/blogapp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/veysel/Desktop/_NetCore/Blog/BlogApp/blogapp/Views/Post/Index.cshtml]
+[C:/Users/Ogr/Desktop/veysel/BlogApp/blogapp/Views/Post/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/veysel/Desktop/_NetCore/Blog/BlogApp/blogapp/Views/Shared/Components/Comments/Default.cshtml]
+[C:/Users/Ogr/Desktop/veysel/BlogApp/blogapp/Views/Shared/Components/Comments/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ29tbWVudHNcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/veysel/Desktop/_NetCore/Blog/BlogApp/blogapp/Views/Shared/Components/LastPosts/Default.cshtml]
+[C:/Users/Ogr/Desktop/veysel/BlogApp/blogapp/Views/Shared/Components/LastPosts/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTGFzdFBvc3RzXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/veysel/Desktop/_NetCore/Blog/BlogApp/blogapp/Views/Shared/Components/PostTags/Default.cshtml]
+[C:/Users/Ogr/Desktop/veysel/BlogApp/blogapp/Views/Shared/Components/PostTags/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUG9zdFRhZ3NcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/veysel/Desktop/_NetCore/Blog/BlogApp/blogapp/Views/Shared/_Layout.cshtml]
+[C:/Users/Ogr/Desktop/veysel/BlogApp/blogapp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/veysel/Desktop/_NetCore/Blog/BlogApp/blogapp/Views/_ViewImports.cshtml]
+[C:/Users/Ogr/Desktop/veysel/BlogApp/blogapp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/veysel/Desktop/_NetCore/Blog/BlogApp/blogapp/Views/_ViewStart.cshtml]
+[C:/Users/Ogr/Desktop/veysel/BlogApp/blogapp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

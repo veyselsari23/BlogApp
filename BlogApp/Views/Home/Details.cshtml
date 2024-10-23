@@ -28,8 +28,33 @@
                     <p>@Model.PublishedOn</p>
                 </div>
 
-                <div>
+                <div id="yorumlar">
                     @await Component.InvokeAsync("Comments", @Model.PostId)
+
+
+
+                </div>
+                <div>
+                    <div class="row mt-5">
+
+                        <div id="yorumCardList" class="card">
+                            <div class="card-header text-primary align-items-center">
+                                <h6>Yorum Yap</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <label for="yorumText" class="form-label">Yorumunuz</label>
+                                    <textarea class="form-control" id="txtYorumText" rows="3"></textarea>
+                                </div>
+
+                                <div class="mb-3 d-flex justify-content-end">
+                                    <button class="btn btn-success " id="btnYorumKaydet">Yorumu Kaydet</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
 
@@ -43,36 +68,73 @@
     </div>
 </div>
 
-<button class="btn btn-primary" id="btnYorumKayit">Yorum KAyıt </button>
-
 
 @section Scripts {
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {
 
-            $("#btnYorumKayit").click(function () {
-                var jsonString = JSON.stringify("Test json Data");
-                console.log('Click tetiklendi');
+            $("#btnYorumKaydet").click(function () {
+
+
+                var data = $("#txtYorumText").val();
+                var _userId = 1;
+                var _postId = 1;
+                var _PublishedOn = Date.now();
+
+            
+                var Comment = {
+                    Text: data,
+                    PublishedOn: _PublishedOn,
+                    PostId: 1,
+                    UserId: 2
+                }
+
                 $.ajax({
                     url: "/Home/AddComment",
                     type: 'POST',
                     dataType: 'json',
-                    data: {
-
-                        comment:'test deneme'
-                    },
+                    data: Comment,
                     success: function (data) {
 
-                     //   var _data=JSON.parse(data);
-                     //   alert("ajax Başarılı");
-                       // console.log(data);
-                       alert(data.toString());
+  
+                                    alert(data.Comment);
+
+                        $("#yorumlar").append(`<section style="background-color: #eee;">
+          <div class="container py-3" >
+             <div class="row d-flex justify-content-center" >
+                <div class="col-md-12">
+                   <div class="card">
+                      <div class="card-body" >
+                         <div class="d-flex flex-start align-items-center">
+                            <img class="rounded-circle shadow-1-strong me-3" src="/img/avatar.jpg" alt="avatar" width="60"
+                               height="60" />
+                            <div>
+                               <h6 class="fw-bold text-primary mb-1" id="UserName"></h6>
+                               <p class="text-muted small mb-0" id="tarih">
+                            Tarih
+                               </p>
+                            </div>
+                         </div>
+
+                         <p class="mt-3 mb-4 pb-2" id="content">
+                       Text
+                         </p>
+
+
+
+
+                      </div>
+
+                   </div>
+                </div>
+             </div>
+          </div>
+       </section>`)
                     },
-                    error: function () {
+                    error: function (error) {
 
                         alert('hata')
                     }
