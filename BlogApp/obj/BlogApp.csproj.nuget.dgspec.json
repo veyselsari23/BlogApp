@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\veysel\\Desktop\\blog\\BlogApp\\blogapp\\BlogApp.csproj": {}
+    "C:\\Users\\veysel\\Desktop\\blog\\BlogApp\\BlogApp\\BlogApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\veysel\\Desktop\\blog\\BlogApp\\blogapp\\BlogApp.csproj": {
+    "C:\\Users\\veysel\\Desktop\\blog\\BlogApp\\BlogApp\\BlogApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\veysel\\Desktop\\blog\\BlogApp\\blogapp\\BlogApp.csproj",
+        "projectUniqueName": "C:\\Users\\veysel\\Desktop\\blog\\BlogApp\\BlogApp\\BlogApp.csproj",
         "projectName": "BlogApp",
-        "projectPath": "C:\\Users\\veysel\\Desktop\\blog\\BlogApp\\blogapp\\BlogApp.csproj",
+        "projectPath": "C:\\Users\\veysel\\Desktop\\blog\\BlogApp\\BlogApp\\BlogApp.csproj",
         "packagesPath": "C:\\Users\\veysel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\veysel\\Desktop\\blog\\BlogApp\\blogapp\\obj\\",
+        "outputPath": "C:\\Users\\veysel\\Desktop\\blog\\BlogApp\\BlogApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages"
